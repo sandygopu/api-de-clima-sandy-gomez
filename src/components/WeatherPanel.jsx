@@ -45,7 +45,7 @@ const WeatherPanel = ({ data }) => {
             
             <div className='panel-info-base'>
             <h2>{ data.name }</h2>
-            <h3 className='panel-description'>{ data.weather?.[0].description }</h3>
+            <h3 className='panel-description'>{ (data.weather?.[0].description).toUpperCase() }</h3>
             
             </div>
 
