@@ -176,5 +176,6 @@ form{
   .navbar_item_3{
     order: 3;
     max-width: 500px;
+    cursor: pointer;
   }
  }
