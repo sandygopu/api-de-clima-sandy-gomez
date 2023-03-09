@@ -1,0 +1,112 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+
+:root{
+  
+  /* colors */
+  --blue-color: #026EED;
+  --lightBlue-color: #56A5f1;
+  --lightBlue2-color:#D5F3FF;
+  --white-color:#FFFF;
+  --backgroundBlue: #51B4E8;
+  --backgroundLightBlue: #D5F3FF;
+  --cardBlue: #D5F3FF;
+  --cardLightBlue: #E5F2FF;
+  --button-blue: #38A0D8;
+
+ 
+  
+
+  /* Font and typography */
+  --body-font: 'Sen', sans-serif;
+  
+}
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--body-font)
+}
+
+body{
+  font-family: var(--body-font)
+}
+
+.load {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 1000;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+/*=============== LOADER ===============*/
+.load img {
+  fill: var(--first-color);
+  width: 100px;
+  animation: scroll 1.5s infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+
+
+@media screen and (min-width: 767px) {
+
+  .navbar_item_1,
+  .navbar_item_3{
+    padding: 0;
+  }
+
+  .navbar_item_2{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav_container{
+    
+    display: flex;
+    justify-content:center;
+
+    align-items: center;
+
+  }
+
+
+  form{
+    display: flex;
+    padding: 20px;
+  }
+
+  .search-control{
+    display: flex;
+    
+  }
+}
